@@ -1,0 +1,163 @@
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	background-image:
+    linear-gradient( rgba(75,0,130,.5), rgba(75,0,130,.5) ),
+		url("../img/background.jpg");
+	/* background-image: url("../img/background.jpg"); */
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+  background-position: left center;
+  background-size: cover;
+}
+
+h1 {
+	text-align: center;
+	color: #ffffff;
+}
+
+form {
+	border: 3px solid #65018f;
+	padding: 20px;
+	background-color: #ffffffbb;
+	margin: auto;
+	max-width: 600px;
+	display: block;
+}
+
+.progress {
+	width: 100%;
+	height: 20px;
+	background-color: #f2f2f2;
+	border-radius: 10px;
+	margin-bottom: 10px;
+	position: relative;
+}
+
+.progress-fill {
+	height: 100%;
+	background-color: #65018f;
+	border-radius: 10px;
+	transition: width 0.5s ease;
+	width: 0%;
+}
+
+.progress-number {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: white;
+	font-weight: bold;
+	font-size: 14px;
+}
+
+/* Set progress bar width based on percentage */
+#washing-machines-progress .progress-fill {
+	width: 100%;
+}
+
+#dryers-progress .progress-fill {
+	width: 100%;
+}
+
+select, input[type=number] {
+	width: 100%;
+	height: 2.5rem;
+	padding: 12px 20px;
+	margin: 8px 0;
+	display: inline-block;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-sizing: border-box;
+}
+
+button {
+	background-color: #65018f;
+	color: white;
+	padding: 14px 20px;
+	margin: 8px 0;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+	width: 100%;
+}
+
+button:hover {
+	opacity: 0.8;
+}
+
+#notify-btn {
+	background-color: #65018f;
+	color: white;
+	padding: 14px 20px;
+	margin: 8px 0;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+	width: 50%;
+}
+
+#notify-btn:hover {
+	opacity: 0.8;
+}
+
+#notify-machine {
+	width: 49%;
+}
+
+label {
+	display: inline-block;
+	margin: 0.5rem 0;
+}
+
+/* Style the button */
+#instructions-btn {
+	background-color: #65018f;
+	color: white;
+	padding: 14px 20px;
+	margin: 8px 0;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+	width: 100%;
+	cursor: pointer;
+}
+
+/* The modal (background) */
+.instructions-modal {
+	display: none; /* Hidden by default */
+	position: fixed; /* Stay in place */
+	z-index: 1; /* Sit on top */
+	left: 0;
+	top: 0;
+	width: 100%; /* Full width */
+	height: 100%; /* Full height */
+	overflow: auto; /* Enable scroll if needed */
+	background-color: rgb(0,0,0); /* Fallback color */
+	background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.instructions-modal-content {
+	background-color: #fefefe;
+	margin: 10% auto; /* 10% from the top and centered */
+	padding: 20px;
+	border: 1px solid #888;
+	width: 80%; /* Could be more or less, depending on screen size */
+	max-width: 600px;
+}
+
+/* The Close Button */
+.instructions-modal-content .close {
+	color: #aaa;
+	float: right;
+	font-size: 28px;
+	font-weight: bold;
+}
+
+.instructions-modal-content .close:hover,
+.instructions-modal-content .close:focus {
+	color: black;
+	text-decoration: none;
+	cursor: pointer;
+}

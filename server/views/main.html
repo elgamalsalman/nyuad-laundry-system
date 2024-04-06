@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>NYUAD Laundry</title>
+	<meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/main.css" />
+</head>
+<body>
+	<h1>NYUAD Laundry</h1>
+	<form>
+		<label for="building">Choose building</label>
+		<select id="building" name="building">
+			<option value="A1">A1</option>
+			<option value="A2">A2</option>
+			<option value="A3">A3</option>
+			<option value="A4">A4</option>
+			<option value="A5">A5</option>
+			<option value="A6">A6</option>
+		</select>
+
+		<label for="sub-building">Choose sub-building</label>
+		<select id="sub-building" name="sub-building">
+			<option value="A">A</option>
+			<option value="B">B</option>
+			<option value="C">C</option>
+		</select>
+
+		<label for="washing-machines">Number of free washing machines</label>
+		<div class="progress" id="washing-machines-progress">
+			<div class="progress-fill">
+				<div class="progress-number">0</div>
+			</div>
+		</div>
+
+		<label for="dryers">Number of free dryers</label>
+		<div class="progress" id="dryers-progress">
+			<div class="progress-fill">
+				<div class="progress-number">0</div>
+			</div>
+		</div>
+
+		<label for="net-id">Enter NetID :</label>
+		<input type="text" id="net-id" name="net-id">
+
+		<button type="button" id="washers-queue-btn" name="washers-queue">Join washing machines queue</button>
+		<button type="button" id="dryers-queue-btn" name="dryers-queue">Join dryers queue</button>
+
+		<button type="button" id="notify-btn">Notify Me</button>
+		<select id="notify-machine" name="notify-machine">
+			<option value="W1">W1</option>
+			<option value="W2">W2</option>
+			<option value="W3">W3</option>
+			<option value="W4">W4</option>
+			<option value="W5">W5</option>
+			<option value="W6">W6</option>
+			<option value="D1">D1</option>
+			<option value="D2">D2</option>
+			<option value="D3">D3</option>
+			<option value="D4">D4</option>
+			<option value="D5">D5</option>
+			<option value="D6">D6</option>
+		</select>
+
+		<button type="button" id="instructions-btn">Instructions</button>
+
+		<div class="instructions-modal">
+			<div class="instructions-modal-content">
+				<span class="close">&times;</span>
+				<h2>Instructions</h2>
+				<h4>Using Washing Machines:</h4>
+				<ol>
+					<li>Sort the clothes: Sort the clothes according to color, fabric, and dirt level. Dark and light-colored clothes should be washed separately. Whites should be washed separately as well.</li>
+					<li>Load the clothes: Load the washing machine with the sorted clothes. Do not overload the machine, as it may not clean the clothes properly. Leave enough space for the clothes to move around inside the drum.</li>
+					<li>Add Detergent: Add the detergent to the machine. If using liquid detergent, pour it into the middle slot of the detergent tray. If using powder detergent, pour it into either the left-most or right-most slot of the tray. If the detergent tray has separate compartments for fabric softener or bleach, add those accordingly.</li>
+					<li>Choose a setting: Choose a washing cycle that suits your clothes' fabric and dirt level. Most machines have preset cycles, such as delicate, normal, or heavy-duty. Some machines also have additional settings such as a pre-wash, extra rinse, or quick wash. Select the appropriate temperature for the cycle.</li>
+					<li>Start the machine: After selecting the settings, press the start button. The machine will begin to fill with water and start the washing cycle. Do not open the machine in between cycles in any case, as it may cause the machine to stop or malfunction.</li>
+				</ol>
+				<h4>Using Dryers:</h4>
+				<ol>
+					<li>Load the dryer: Load the dryer with the clothes you want to dry. Do not overload the dryer, as it may not dry the clothes properly.</li>
+					<li>Choose your preferred setting: Choose a drying cycle that suits your clothes' fabric and the amount of moisture in them. Most machines have preset cycles, such as delicate, normal, or heavy-duty. Some machines also have additional settings such as a cool-down cycle or a wrinkle-free cycle.</li>
+					<li>Start the machine: After selecting the settings, press the start button. The machine will start to dry the clothes. Do not open the dryer during a cycle, as it may interrupt the drying process.</li>
+					<li>Clean the lint filter: After the cycle is complete, remove the lint filter from the dryer and clean it. This will prevent the lint from building up in the dryer and causing a fire hazard.</li>
+					<li>Dispose of the water: Some dryers have a water tray that collects the moisture from the drying clothes. If your dryer has one, remove the tray and dispose of the water. This will prevent the tray from overflowing and causing a mess.</li>
+				</ol>
+			</div>
+		</div>
+	</form>
+
+	<script type="module" src="js/animation.js"></script>
+	<script type="module" src="js/data_listener.js"></script>
+</body>
+</html>
