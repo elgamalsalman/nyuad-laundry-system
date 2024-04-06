@@ -35,9 +35,9 @@ The idea is that we should have an M5Stack placed on every washing machine and e
 
 The method by which an M5Stack detects whether the machine it is on attached to is already in a cycle or not is by calculating the standard deviation of the accelerometer data magnitude in order to detect vibrations. Below are photos for the accelerometric standard deviation for an M5Stack on a free and a busy machine respectively. A big clear difference is observed and therefore a cutoff is chosen in between to differentiate between working and free machines.
 
-<p float="left">
-  <img src="./assets/free_stddev_m5_stack.png" alt="free standard deviation m5stack" width="100" />
-  <img src="./assets/used_stddev_m5_stack.png" alt="used standard deviation m5stack" width="100" /> 
+<p float="center">
+  <img src="./assets/free_stddev_m5_stack.png" alt="free standard deviation m5stack" width="200" />
+  <img src="./assets/used_stddev_m5_stack.png" alt="used standard deviation m5stack" width="200" /> 
 </p>
 
 ### UI
@@ -51,14 +51,16 @@ When the M5Stack is turned on, a setup process is done to initialise the basic i
 
 A menu that looks exactly like the image shown below will show up once the device is turned on, the user can switch through the menu by clicking on the arrows to the left and right and different buildings will show up. When the user wants to select the building this M5Stack machine is in they can just click on the name of the building (the center of the screen). A similar menu will be shown for the machine id (type of machine and machine number).
 
-![M5 Stack Menu](./assets/m5_stack_menu.png)
+<p float="center">
+  <img src="./assets/m5_stack_menu.png" alt="M5 Stack Menu" width="200" />
+</p>
 
 And the following screens are presented when the machine is free, used or reserved by a person (se2422 in this case) respectively.
 
-<p float="left">
-  <img src="./assets/free_m5_stack.png" alt="free m5stack" width="100" />
-  <img src="./assets/used_m5_stack.png" alt="used m5stack" width="100" /> 
-  <img src="./assets/reserved_m5_stack.png" alt="reserved m5stack for se2422" width="100" />
+<p float="center">
+  <img src="./assets/free_m5_stack.png" alt="free m5stack" width="200" />
+  <img src="./assets/used_m5_stack.png" alt="used m5stack" width="200" /> 
+  <img src="./assets/reserved_m5_stack.png" alt="reserved m5stack for se2422" width="200" />
 </p>
 
 ##### Webpage
