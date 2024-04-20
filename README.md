@@ -66,6 +66,7 @@ And the following screens are presented when the machine is free, used or reserv
 ##### Webpage
 
 The interface follows the usual NYU purple theme, that makes it feel familiar and welcoming to NYUAD students. The user is first prompted to choose their building which they can do by clicking on the menus and choosing their building and sub-building from the options that drop down as shown in the picture below.
-
-![Main Page](./assets/main_page.png)
-![Instructions Page](./assets/instructions_page.png)
+<p align="center">
+  <img src="./assets/main_page.png" alt"Main Page" />
+  <img src="./assets/instructions_page.png" alt="Instructions Page" />
+</p>
